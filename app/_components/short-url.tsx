@@ -13,7 +13,6 @@ export default function ShortCode() {
     try {
       const response = await fetch("/api/allurl", { cache: "no-store" });
       const data = await response.json();
-      console.log("DATA", data);
       setUrls(data);
     } catch (error) {
       console.error("Failed to fetch URLs:", error);

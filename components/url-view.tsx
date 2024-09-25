@@ -21,7 +21,6 @@ interface UrlViewProps {
 
 export default function UrlView({ urls, loading }: UrlViewProps) {
   const [isCopied, setIsCopied] = useState("");
-  console.log("URLS", urls);
   const shortenerUrl = (code: string) =>
     `${process.env.NEXT_PUBLIC_BASE_URL}/${code}`;
 
@@ -44,7 +43,6 @@ export default function UrlView({ urls, loading }: UrlViewProps) {
   };
 
   if (loading) {
-    console.log("LOADING");
     return (
       <>
         <div className="max-w-xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-sm border border-gray-300/40">
