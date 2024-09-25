@@ -7,7 +7,7 @@ export async function GET() {
       orderBy: { createAt: "desc" },
       take: 5,
     });
-    console.log("URL", urls);
+    console.log("URL getting data", urls);
     return NextResponse.json(urls);
   } catch (err) {
     return NextResponse.json(
