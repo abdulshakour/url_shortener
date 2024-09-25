@@ -11,8 +11,9 @@ export default async function Redirect({
   const url = await db.url.findUnique({
     where: { shortCode: shortcode },
   });
+
   if (!url) {
-    return <div>404 - Url not found</div>;
+    return <div>404 - Url not found{shortcode}</div>;
   }
   redirect(url.originalUrl);
 }
