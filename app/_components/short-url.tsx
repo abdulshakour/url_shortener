@@ -29,7 +29,7 @@ export default function ShortCode() {
   return (
     <>
       <UrlShorter fetchurl={fetchurl} />
-      {/* <UrlView urls={urls} loading={loading} /> */}
+      <UrlView urls={urls} loading={loading} />
     </>
   );
 }
