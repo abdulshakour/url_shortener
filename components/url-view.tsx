@@ -71,7 +71,6 @@ export default function UrlView({ urls, loading }: UrlViewProps) {
   return (
     <>
       <Toaster />
-      {console.log("FROM_REAL")}
       <div className="max-w-xl mx-auto mt-8 p-6 bg-white rounded-lg shadow-sm border border-gray-300/40">
         <h2 className="text-md font-semibold mb-4  text-gray-800">
           Resent Shortened URL
