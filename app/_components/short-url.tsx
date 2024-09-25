@@ -11,7 +11,7 @@ export default function ShortCode() {
   const fetchurl = async () => {
     setLoading(true); // Set loading state
     try {
-      const response = await fetch("/api/allurl");
+      const response = await fetch("/api/allurl", { cache: "no-store" });
       const data = await response.json();
       console.log("DATA", data);
       setUrls(data);
